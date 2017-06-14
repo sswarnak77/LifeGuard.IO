@@ -77,7 +77,7 @@ ROOT_URLCONF = 'entrypoint.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': ['templates'],
+        'DIRS': ['assets/templates'],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [

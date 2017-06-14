@@ -1,0 +1,11 @@
+{% extends 'base.html' %}
+{% load render_bundle from webpack_loader %}
+{% load fontawesome %}
+
+{% block content %}
+<div id="container">
+       {% fontawesome_icon 'spinner' large=True spin=True %}<br><br>
+        <i class="pending">Loading components...</i><br><br>
+</div>
+{% render_bundle 'hello' %}
+{% endblock %}
