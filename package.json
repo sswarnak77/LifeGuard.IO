@@ -25,6 +25,8 @@
     "webpack-bundle-tracker": "^0.2.0"
   },
   "dependencies": {
-    "js-cookie": "^2.1.4"
+    "js-cookie": "^2.1.4",
+    "mobx": "^3.1.15",
+    "mobx-react": "^4.2.1"
   }
 }

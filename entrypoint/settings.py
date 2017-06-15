@@ -31,6 +31,7 @@ ALLOWED_HOSTS = []
 # Application definition
 
 INSTALLED_APPS = [
+    'dashboard',
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
@@ -99,8 +100,8 @@ WSGI_APPLICATION = 'entrypoint.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.mysql',
-        'NAME': 'yin',
-        'USER': 'yinuser',
+        'NAME': 'entrypoint',
+        'USER': 'devmaster',
         'PASSWORD': 'Abcde#45',
         'HOST': 'localhost',
         'PORT': '',
