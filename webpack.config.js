@@ -6,7 +6,6 @@ module.exports = {
     context: __dirname,
     entry: {
         hello: './assets/js/hello',
-        index: './assets/js/index',
     },
 
     output: {
