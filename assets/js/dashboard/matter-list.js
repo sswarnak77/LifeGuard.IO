@@ -13,24 +13,26 @@ export default class MatterList extends React.Component {
     loadMatters() {
         this.setState({
             matters: [
-                {name: "test1", profit: 5},
-                {name: "test2", profit: 2}
+                {id: 1, name: "test1", profit: 5},
+                {id: 2, name: "test2", profit: 2}
             ]
         })
     }
 
     componentDidMount() {
         this.loadMatters();
-        setInterval(this.loadMatters, this.props.pollInterval)
+        this.intervalID = setInterval(this.loadMatters, this.props.pollInterval)
+    }
+
+    componentWillUnmount() {
+        clearInterval(this.intervalID);
     }
 
     
     render() {
-        if (this.state.matters) {
-            var nodes = this.state.matters.map(function(val){
-                    return <li> {val.name} </li>
-            })
-        }
+        const nodes = this.state.matters.map((val) =>
+                <li key={val.id.toString()}> {val.name} </li>
+        );
         return (
             <ul>
                 {nodes}
