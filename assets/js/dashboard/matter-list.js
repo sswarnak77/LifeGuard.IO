@@ -11,12 +11,16 @@ export default class MatterList extends React.Component {
     }
 
     loadMatters() {
-        this.setState({
-            matters: [
-                {id: 1, name: "test1", profit: 5},
-                {id: 2, name: "test2", profit: 2}
-            ]
+        $.get(this.props.url)
+        .done( (data) => {
+            this.setState({
+                matters: data.results
+            });
         })
+        .fail( (xhr, status, error) => {
+            console.log("Error received: " + error + ", " + status);
+        });
+
     }
 
     componentDidMount() {
