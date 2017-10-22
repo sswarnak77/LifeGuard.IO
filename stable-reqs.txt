@@ -1,7 +1,0 @@
-Django==1.11.2
-django-fontawesome==0.3.1
-django-webpack-loader==0.5.0
-djangorestframework==3.6.3
-MySQL-python==1.2.5
-pytz==2017.2
-PyYAML==3.12
