@@ -1,0 +1,8 @@
+Due to occlusion, clutter and quality:
+v_spiking_01_01.mpg
+v_spiking_09_02.mpg
+v_spiking_11_06.mpg
+v_spiking_17_02.mpg
+v_spiking_21_01.mpg
+v_spiking_23_01.mpg
+v_spiking_24_02.mpg

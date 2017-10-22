@@ -1,0 +1,238 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<viper xmlns="http://lamp.cfar.umd.edu/viper#" xmlns:data="http://lamp.cfar.umd.edu/viperdata#">
+    <config>
+        <descriptor name="Information" type="FILE">
+            <attribute dynamic="false" name="SOURCETYPE" type="http://lamp.cfar.umd.edu/viperdata#lvalue">
+                <data:lvalue-possibles>
+                    <data:lvalue-enum value="SEQUENCE"/>
+                    <data:lvalue-enum value="FRAMES"/>
+                </data:lvalue-possibles>
+            </attribute>
+            <attribute dynamic="false" name="NUMFRAMES" type="http://lamp.cfar.umd.edu/viperdata#dvalue"/>
+            <attribute dynamic="false" name="FRAMERATE" type="http://lamp.cfar.umd.edu/viperdata#fvalue"/>
+            <attribute dynamic="false" name="H-FRAME-SIZE" type="http://lamp.cfar.umd.edu/viperdata#dvalue"/>
+            <attribute dynamic="false" name="V-FRAME-SIZE" type="http://lamp.cfar.umd.edu/viperdata#dvalue"/>
+            <attribute dynamic="false" name="START TIME" type="http://lamp.cfar.umd.edu/viperdata#fvalue"/>
+        </descriptor>
+        <descriptor name="PERSON" type="OBJECT">
+            <attribute dynamic="true" name="Location" type="http://lamp.cfar.umd.edu/viperdata#bbox"/>
+            <attribute dynamic="true" name="basketball_shooting" type="http://lamp.cfar.umd.edu/viperdata#bvalue">
+                <default>
+                    <data:bvalue value="false"/>
+                </default>
+            </attribute>
+            <attribute dynamic="true" name="biking" type="http://lamp.cfar.umd.edu/viperdata#bvalue">
+                <default>
+                    <data:bvalue value="false"/>
+                </default>
+            </attribute>
+            <attribute dynamic="true" name="diving" type="http://lamp.cfar.umd.edu/viperdata#bvalue">
+                <default>
+                    <data:bvalue value="false"/>
+                </default>
+            </attribute>
+            <attribute dynamic="true" name="golf_swing" type="http://lamp.cfar.umd.edu/viperdata#bvalue">
+                <default>
+                    <data:bvalue value="false"/>
+                </default>
+            </attribute>
+            <attribute dynamic="true" name="horse_riding" type="http://lamp.cfar.umd.edu/viperdata#bvalue">
+                <default>
+                    <data:bvalue value="false"/>
+                </default>
+            </attribute>
+            <attribute dynamic="true" name="soccer_juggling" type="http://lamp.cfar.umd.edu/viperdata#bvalue">
+                <default>
+                    <data:bvalue value="false"/>
+                </default>
+            </attribute>
+            <attribute dynamic="true" name="swing" type="http://lamp.cfar.umd.edu/viperdata#bvalue">
+                <default>
+                    <data:bvalue value="false"/>
+                </default>
+            </attribute>
+            <attribute dynamic="true" name="tennis_swing" type="http://lamp.cfar.umd.edu/viperdata#bvalue">
+                <default>
+                    <data:bvalue value="false"/>
+                </default>
+            </attribute>
+            <attribute dynamic="true" name="trampoline_jumping" type="http://lamp.cfar.umd.edu/viperdata#bvalue">
+                <default>
+                    <data:bvalue value="false"/>
+                </default>
+            </attribute>
+            <attribute dynamic="true" name="volleyball_spiking" type="http://lamp.cfar.umd.edu/viperdata#bvalue">
+                <default>
+                    <data:bvalue value="false"/>
+                </default>
+            </attribute>
+            <attribute dynamic="true" name="walking" type="http://lamp.cfar.umd.edu/viperdata#bvalue">
+                <default>
+                    <data:bvalue value="false"/>
+                </default>
+            </attribute>
+        </descriptor>
+        <descriptor name="VEHICLE" type="OBJECT">
+            <attribute dynamic="true" name="Location" type="http://lamp.cfar.umd.edu/viperdata#bbox"/>
+            <attribute dynamic="true"
+                name="Environment-Related Occlusion" type="http://lamp.cfar.umd.edu/viperdata#fvalue">
+                <default>
+                    <data:fvalue value="0.0"/>
+                </default>
+            </attribute>
+            <attribute dynamic="true" name="Event-Related Occlusion" type="http://lamp.cfar.umd.edu/viperdata#fvalue">
+                <default>
+                    <data:fvalue value="0.0"/>
+                </default>
+            </attribute>
+            <attribute dynamic="true" name="Turning" type="http://lamp.cfar.umd.edu/viperdata#bvalue">
+                <default>
+                    <data:bvalue value="false"/>
+                </default>
+            </attribute>
+            <attribute dynamic="true" name="Starting" type="http://lamp.cfar.umd.edu/viperdata#bvalue">
+                <default>
+                    <data:bvalue value="false"/>
+                </default>
+            </attribute>
+            <attribute dynamic="true" name="Stopping" type="http://lamp.cfar.umd.edu/viperdata#bvalue">
+                <default>
+                    <data:bvalue value="false"/>
+                </default>
+            </attribute>
+            <attribute dynamic="true" name="U-Turn" type="http://lamp.cfar.umd.edu/viperdata#bvalue">
+                <default>
+                    <data:bvalue value="false"/>
+                </default>
+            </attribute>
+            <attribute dynamic="true" name="Maintaining Distance" type="http://lamp.cfar.umd.edu/viperdata#bvalue">
+                <default>
+                    <data:bvalue value="false"/>
+                </default>
+            </attribute>
+            <attribute dynamic="true" name="No. Vehicle" type="http://lamp.cfar.umd.edu/viperdata#fvalue">
+                <default>
+                    <data:fvalue value="2.0"/>
+                </default>
+            </attribute>
+            <attribute dynamic="true" name="Not Scored" type="http://lamp.cfar.umd.edu/viperdata#bvalue">
+                <default>
+                    <data:bvalue value="false"/>
+                </default>
+            </attribute>
+        </descriptor>
+    </config>
+    <data>
+        <sourcefile filename="file:/C:/Users/User/Desktop/Converted/Soccer/09/v_juggle_09_07.mpg">
+            <file id="0" name="Information">
+                <attribute name="SOURCETYPE"/>
+                <attribute name="NUMFRAMES">
+                    <data:dvalue value="315"/>
+                </attribute>
+                <attribute name="FRAMERATE">
+                    <data:fvalue value="1.0"/>
+                </attribute>
+                <attribute name="H-FRAME-SIZE"/>
+                <attribute name="V-FRAME-SIZE"/>
+                <attribute name="START TIME"/>
+            </file>
+            <object framespan="1:315" id="0" name="PERSON">
+                <attribute name="Location">
+                    <data:bbox framespan="1:9" height="288" width="280"
+                        x="303" y="85"/>
+                    <data:bbox framespan="10:34" height="288"
+                        width="280" x="316" y="105"/>
+                    <data:bbox framespan="35:37" height="288"
+                        width="280" x="193" y="90"/>
+                    <data:bbox framespan="38:66" height="341"
+                        width="280" x="260" y="41"/>
+                    <data:bbox framespan="67:68" height="341"
+                        width="280" x="260" y="10"/>
+                    <data:bbox framespan="69:72" height="354"
+                        width="280" x="260" y="-3"/>
+                    <data:bbox framespan="73:74" height="386"
+                        width="280" x="260" y="-3"/>
+                    <data:bbox framespan="75:104" height="386"
+                        width="280" x="285" y="-2"/>
+                    <data:bbox framespan="105:108" height="417"
+                        width="360" x="234" y="-2"/>
+                    <data:bbox framespan="109:110" height="417"
+                        width="388" x="206" y="-2"/>
+                    <data:bbox framespan="111:113" height="462"
+                        width="388" x="206" y="-2"/>
+                    <data:bbox framespan="114:138" height="483"
+                        width="388" x="206" y="-2"/>
+                    <data:bbox framespan="139:148" height="351"
+                        width="253" x="241" y="64"/>
+                    <data:bbox framespan="149:152" height="330"
+                        width="294" x="230" y="47"/>
+                    <data:bbox framespan="153:156" height="330"
+                        width="331" x="209" y="32"/>
+                    <data:bbox framespan="157:161" height="330"
+                        width="375" x="165" y="32"/>
+                    <data:bbox framespan="162:168" height="355"
+                        width="375" x="165" y="7"/>
+                    <data:bbox framespan="169:171" height="421"
+                        width="429" x="104" y="-1"/>
+                    <data:bbox framespan="172:173" height="421"
+                        width="457" x="76" y="-1"/>
+                    <data:bbox framespan="174:187" height="394"
+                        width="410" x="120" y="-1"/>
+                    <data:bbox framespan="188:243" height="394"
+                        width="503" x="27" y="-1"/>
+                    <data:bbox framespan="244:264" height="330"
+                        width="362" x="168" y="-1"/>
+                    <data:bbox framespan="265:300" height="391"
+                        width="362" x="168" y="-1"/>
+                    <data:bbox framespan="301:304" height="391"
+                        width="398" x="132" y="-1"/>
+                    <data:bbox framespan="305:307" height="443"
+                        width="441" x="89" y="-1"/>
+                    <data:bbox framespan="308:308" height="443"
+                        width="471" x="59" y="-1"/>
+                    <data:bbox framespan="309:309" height="482"
+                        width="471" x="59" y="-1"/>
+                    <data:bbox framespan="310:312" height="482"
+                        width="509" x="21" y="-1"/>
+                    <data:bbox framespan="313:314" height="482"
+                        width="551" x="21" y="-1"/>
+                    <data:bbox framespan="315:315" height="482"
+                        width="574" x="-2" y="-1"/>
+                </attribute>
+                <attribute name="basketball_shooting">
+                    <data:bvalue framespan="1:315" value="false"/>
+                </attribute>
+                <attribute name="biking">
+                    <data:bvalue framespan="1:315" value="false"/>
+                </attribute>
+                <attribute name="diving">
+                    <data:bvalue framespan="1:315" value="false"/>
+                </attribute>
+                <attribute name="golf_swing">
+                    <data:bvalue framespan="1:315" value="false"/>
+                </attribute>
+                <attribute name="horse_riding">
+                    <data:bvalue framespan="1:315" value="false"/>
+                </attribute>
+                <attribute name="soccer_juggling">
+                    <data:bvalue framespan="1:315" value="true"/>
+                </attribute>
+                <attribute name="swing">
+                    <data:bvalue framespan="1:315" value="false"/>
+                </attribute>
+                <attribute name="tennis_swing">
+                    <data:bvalue framespan="1:315" value="false"/>
+                </attribute>
+                <attribute name="trampoline_jumping">
+                    <data:bvalue framespan="1:315" value="false"/>
+                </attribute>
+                <attribute name="volleyball_spiking">
+                    <data:bvalue framespan="1:315" value="false"/>
+                </attribute>
+                <attribute name="walking">
+                    <data:bvalue framespan="1:315" value="false"/>
+                </attribute>
+            </object>
+        </sourcefile>
+    </data>
+</viper>

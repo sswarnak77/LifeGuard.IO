@@ -1,0 +1,438 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<viper xmlns="http://lamp.cfar.umd.edu/viper#" xmlns:data="http://lamp.cfar.umd.edu/viperdata#">
+    <config>
+        <descriptor name="Information" type="FILE">
+            <attribute dynamic="false" name="SOURCETYPE" type="http://lamp.cfar.umd.edu/viperdata#lvalue">
+                <data:lvalue-possibles>
+                    <data:lvalue-enum value="SEQUENCE"/>
+                    <data:lvalue-enum value="FRAMES"/>
+                </data:lvalue-possibles>
+            </attribute>
+            <attribute dynamic="false" name="NUMFRAMES" type="http://lamp.cfar.umd.edu/viperdata#dvalue"/>
+            <attribute dynamic="false" name="FRAMERATE" type="http://lamp.cfar.umd.edu/viperdata#fvalue"/>
+            <attribute dynamic="false" name="H-FRAME-SIZE" type="http://lamp.cfar.umd.edu/viperdata#dvalue"/>
+            <attribute dynamic="false" name="V-FRAME-SIZE" type="http://lamp.cfar.umd.edu/viperdata#dvalue"/>
+            <attribute dynamic="false" name="START TIME" type="http://lamp.cfar.umd.edu/viperdata#fvalue"/>
+        </descriptor>
+        <descriptor name="PERSON" type="OBJECT">
+            <attribute dynamic="true" name="Location" type="http://lamp.cfar.umd.edu/viperdata#bbox"/>
+            <attribute dynamic="true" name="basketball_shooting" type="http://lamp.cfar.umd.edu/viperdata#bvalue">
+                <default>
+                    <data:bvalue value="false"/>
+                </default>
+            </attribute>
+            <attribute dynamic="true" name="biking" type="http://lamp.cfar.umd.edu/viperdata#bvalue">
+                <default>
+                    <data:bvalue value="false"/>
+                </default>
+            </attribute>
+            <attribute dynamic="true" name="diving" type="http://lamp.cfar.umd.edu/viperdata#bvalue">
+                <default>
+                    <data:bvalue value="false"/>
+                </default>
+            </attribute>
+            <attribute dynamic="true" name="golf_swing" type="http://lamp.cfar.umd.edu/viperdata#bvalue">
+                <default>
+                    <data:bvalue value="false"/>
+                </default>
+            </attribute>
+            <attribute dynamic="true" name="horse_riding" type="http://lamp.cfar.umd.edu/viperdata#bvalue">
+                <default>
+                    <data:bvalue value="false"/>
+                </default>
+            </attribute>
+            <attribute dynamic="true" name="soccer_juggling" type="http://lamp.cfar.umd.edu/viperdata#bvalue">
+                <default>
+                    <data:bvalue value="false"/>
+                </default>
+            </attribute>
+            <attribute dynamic="true" name="swing" type="http://lamp.cfar.umd.edu/viperdata#bvalue">
+                <default>
+                    <data:bvalue value="false"/>
+                </default>
+            </attribute>
+            <attribute dynamic="true" name="tennis_swing" type="http://lamp.cfar.umd.edu/viperdata#bvalue">
+                <default>
+                    <data:bvalue value="false"/>
+                </default>
+            </attribute>
+            <attribute dynamic="true" name="trampoline_jumping" type="http://lamp.cfar.umd.edu/viperdata#bvalue">
+                <default>
+                    <data:bvalue value="false"/>
+                </default>
+            </attribute>
+            <attribute dynamic="true" name="volleyball_spiking" type="http://lamp.cfar.umd.edu/viperdata#bvalue">
+                <default>
+                    <data:bvalue value="false"/>
+                </default>
+            </attribute>
+            <attribute dynamic="true" name="walking" type="http://lamp.cfar.umd.edu/viperdata#bvalue">
+                <default>
+                    <data:bvalue value="false"/>
+                </default>
+            </attribute>
+        </descriptor>
+        <descriptor name="VEHICLE" type="OBJECT">
+            <attribute dynamic="true" name="Location" type="http://lamp.cfar.umd.edu/viperdata#bbox"/>
+            <attribute dynamic="true"
+                name="Environment-Related Occlusion" type="http://lamp.cfar.umd.edu/viperdata#fvalue">
+                <default>
+                    <data:fvalue value="0.0"/>
+                </default>
+            </attribute>
+            <attribute dynamic="true" name="Event-Related Occlusion" type="http://lamp.cfar.umd.edu/viperdata#fvalue">
+                <default>
+                    <data:fvalue value="0.0"/>
+                </default>
+            </attribute>
+            <attribute dynamic="true" name="Turning" type="http://lamp.cfar.umd.edu/viperdata#bvalue">
+                <default>
+                    <data:bvalue value="false"/>
+                </default>
+            </attribute>
+            <attribute dynamic="true" name="Starting" type="http://lamp.cfar.umd.edu/viperdata#bvalue">
+                <default>
+                    <data:bvalue value="false"/>
+                </default>
+            </attribute>
+            <attribute dynamic="true" name="Stopping" type="http://lamp.cfar.umd.edu/viperdata#bvalue">
+                <default>
+                    <data:bvalue value="false"/>
+                </default>
+            </attribute>
+            <attribute dynamic="true" name="U-Turn" type="http://lamp.cfar.umd.edu/viperdata#bvalue">
+                <default>
+                    <data:bvalue value="false"/>
+                </default>
+            </attribute>
+            <attribute dynamic="true" name="Maintaining Distance" type="http://lamp.cfar.umd.edu/viperdata#bvalue">
+                <default>
+                    <data:bvalue value="false"/>
+                </default>
+            </attribute>
+            <attribute dynamic="true" name="No. Vehicle" type="http://lamp.cfar.umd.edu/viperdata#fvalue">
+                <default>
+                    <data:fvalue value="2.0"/>
+                </default>
+            </attribute>
+            <attribute dynamic="true" name="Not Scored" type="http://lamp.cfar.umd.edu/viperdata#bvalue">
+                <default>
+                    <data:bvalue value="false"/>
+                </default>
+            </attribute>
+        </descriptor>
+    </config>
+    <data>
+        <sourcefile filename="file:/I:/cv%20lab/action_youtube_naudio/biking/v_biking_24/mpeg/v_biking_24_03.mpg">
+            <file id="0" name="Information">
+                <attribute name="SOURCETYPE"/>
+                <attribute name="NUMFRAMES">
+                    <data:dvalue value="166"/>
+                </attribute>
+                <attribute name="FRAMERATE">
+                    <data:fvalue value="1.0"/>
+                </attribute>
+                <attribute name="H-FRAME-SIZE"/>
+                <attribute name="V-FRAME-SIZE"/>
+                <attribute name="START TIME"/>
+            </file>
+            <object framespan="1:166" id="0" name="PERSON">
+                <attribute name="Location">
+                    <data:bbox framespan="1:1" height="309" width="242"
+                        x="299" y="182"/>
+                    <data:bbox framespan="2:2" height="309" width="242"
+                        x="324" y="172"/>
+                    <data:bbox framespan="3:3" height="309" width="242"
+                        x="325" y="169"/>
+                    <data:bbox framespan="4:4" height="309" width="242"
+                        x="324" y="171"/>
+                    <data:bbox framespan="5:5" height="309" width="242"
+                        x="324" y="179"/>
+                    <data:bbox framespan="6:6" height="309" width="242"
+                        x="320" y="179"/>
+                    <data:bbox framespan="7:7" height="309" width="242"
+                        x="319" y="173"/>
+                    <data:bbox framespan="8:8" height="309" width="242"
+                        x="314" y="171"/>
+                    <data:bbox framespan="9:9" height="309" width="242"
+                        x="309" y="171"/>
+                    <data:bbox framespan="10:10" height="309"
+                        width="242" x="303" y="168"/>
+                    <data:bbox framespan="11:11" height="309"
+                        width="242" x="301" y="167"/>
+                    <data:bbox framespan="12:12" height="309"
+                        width="242" x="298" y="166"/>
+                    <data:bbox framespan="13:13" height="309"
+                        width="242" x="287" y="160"/>
+                    <data:bbox framespan="14:14" height="309"
+                        width="242" x="281" y="160"/>
+                    <data:bbox framespan="15:15" height="309"
+                        width="242" x="276" y="160"/>
+                    <data:bbox framespan="16:16" height="309"
+                        width="242" x="276" y="153"/>
+                    <data:bbox framespan="17:17" height="309"
+                        width="242" x="294" y="163"/>
+                    <data:bbox framespan="18:18" height="309"
+                        width="242" x="294" y="161"/>
+                    <data:bbox framespan="19:19" height="309"
+                        width="242" x="295" y="157"/>
+                    <data:bbox framespan="20:20" height="309"
+                        width="242" x="303" y="149"/>
+                    <data:bbox framespan="21:21" height="309"
+                        width="242" x="303" y="145"/>
+                    <data:bbox framespan="22:22" height="309"
+                        width="242" x="305" y="142"/>
+                    <data:bbox framespan="23:23" height="309"
+                        width="242" x="337" y="146"/>
+                    <data:bbox framespan="24:24" height="309"
+                        width="242" x="329" y="149"/>
+                    <data:bbox framespan="25:25" height="309"
+                        width="242" x="328" y="147"/>
+                    <data:bbox framespan="26:26" height="309"
+                        width="242" x="327" y="146"/>
+                    <data:bbox framespan="27:27" height="309"
+                        width="242" x="326" y="145"/>
+                    <data:bbox framespan="28:28" height="309"
+                        width="242" x="301" y="143"/>
+                    <data:bbox framespan="29:29" height="309"
+                        width="242" x="301" y="139"/>
+                    <data:bbox framespan="30:30" height="309"
+                        width="242" x="296" y="138"/>
+                    <data:bbox framespan="31:31" height="309"
+                        width="242" x="295" y="143"/>
+                    <data:bbox framespan="32:32" height="309"
+                        width="242" x="294" y="144"/>
+                    <data:bbox framespan="33:33" height="309"
+                        width="242" x="291" y="142"/>
+                    <data:bbox framespan="34:34" height="309"
+                        width="242" x="281" y="140"/>
+                    <data:bbox framespan="35:35" height="309"
+                        width="242" x="280" y="136"/>
+                    <data:bbox framespan="36:36" height="309"
+                        width="242" x="273" y="133"/>
+                    <data:bbox framespan="37:37" height="309"
+                        width="242" x="269" y="134"/>
+                    <data:bbox framespan="38:38" height="309"
+                        width="242" x="269" y="135"/>
+                    <data:bbox framespan="39:39" height="309"
+                        width="242" x="269" y="127"/>
+                    <data:bbox framespan="40:40" height="309"
+                        width="242" x="279" y="124"/>
+                    <data:bbox framespan="41:43" height="309"
+                        width="242" x="284" y="120"/>
+                    <data:bbox framespan="44:46" height="309"
+                        width="242" x="297" y="120"/>
+                    <data:bbox framespan="47:48" height="309"
+                        width="242" x="288" y="120"/>
+                    <data:bbox framespan="49:49" height="309"
+                        width="242" x="280" y="117"/>
+                    <data:bbox framespan="50:51" height="309"
+                        width="242" x="271" y="114"/>
+                    <data:bbox framespan="52:52" height="309"
+                        width="242" x="251" y="118"/>
+                    <data:bbox framespan="53:53" height="309"
+                        width="242" x="243" y="116"/>
+                    <data:bbox framespan="54:54" height="309"
+                        width="242" x="231" y="116"/>
+                    <data:bbox framespan="55:55" height="309"
+                        width="242" x="228" y="116"/>
+                    <data:bbox framespan="56:56" height="309"
+                        width="242" x="227" y="116"/>
+                    <data:bbox framespan="57:57" height="309"
+                        width="242" x="230" y="116"/>
+                    <data:bbox framespan="58:59" height="309"
+                        width="242" x="253" y="119"/>
+                    <data:bbox framespan="60:61" height="309"
+                        width="242" x="243" y="117"/>
+                    <data:bbox framespan="62:63" height="309"
+                        width="242" x="239" y="117"/>
+                    <data:bbox framespan="64:64" height="309"
+                        width="242" x="242" y="120"/>
+                    <data:bbox framespan="65:65" height="309"
+                        width="242" x="243" y="131"/>
+                    <data:bbox framespan="66:67" height="309"
+                        width="242" x="245" y="131"/>
+                    <data:bbox framespan="68:68" height="309"
+                        width="242" x="248" y="133"/>
+                    <data:bbox framespan="69:70" height="309"
+                        width="242" x="248" y="135"/>
+                    <data:bbox framespan="71:71" height="309"
+                        width="242" x="237" y="135"/>
+                    <data:bbox framespan="72:72" height="309"
+                        width="242" x="241" y="135"/>
+                    <data:bbox framespan="73:76" height="309"
+                        width="242" x="237" y="135"/>
+                    <data:bbox framespan="77:77" height="309"
+                        width="242" x="241" y="135"/>
+                    <data:bbox framespan="78:79" height="309"
+                        width="242" x="246" y="135"/>
+                    <data:bbox framespan="80:80" height="309"
+                        width="242" x="249" y="144"/>
+                    <data:bbox framespan="81:81" height="309"
+                        width="242" x="258" y="144"/>
+                    <data:bbox framespan="82:82" height="309"
+                        width="242" x="263" y="144"/>
+                    <data:bbox framespan="83:83" height="309"
+                        width="242" x="265" y="144"/>
+                    <data:bbox framespan="84:85" height="309"
+                        width="242" x="276" y="146"/>
+                    <data:bbox framespan="86:86" height="309"
+                        width="242" x="277" y="146"/>
+                    <data:bbox framespan="87:88" height="309"
+                        width="242" x="316" y="152"/>
+                    <data:bbox framespan="89:89" height="309"
+                        width="242" x="317" y="140"/>
+                    <data:bbox framespan="90:90" height="309"
+                        width="242" x="317" y="139"/>
+                    <data:bbox framespan="91:91" height="309"
+                        width="242" x="316" y="134"/>
+                    <data:bbox framespan="92:92" height="309"
+                        width="242" x="316" y="132"/>
+                    <data:bbox framespan="93:94" height="309"
+                        width="242" x="316" y="131"/>
+                    <data:bbox framespan="95:95" height="309"
+                        width="242" x="314" y="130"/>
+                    <data:bbox framespan="96:96" height="309"
+                        width="242" x="280" y="131"/>
+                    <data:bbox framespan="97:97" height="309"
+                        width="242" x="280" y="135"/>
+                    <data:bbox framespan="98:98" height="309"
+                        width="242" x="281" y="143"/>
+                    <data:bbox framespan="99:100" height="309"
+                        width="242" x="279" y="163"/>
+                    <data:bbox framespan="101:101" height="309"
+                        width="242" x="269" y="165"/>
+                    <data:bbox framespan="102:102" height="309"
+                        width="242" x="263" y="160"/>
+                    <data:bbox framespan="103:103" height="309"
+                        width="242" x="262" y="160"/>
+                    <data:bbox framespan="104:104" height="309"
+                        width="242" x="289" y="155"/>
+                    <data:bbox framespan="105:106" height="309"
+                        width="242" x="288" y="152"/>
+                    <data:bbox framespan="107:107" height="309"
+                        width="242" x="299" y="152"/>
+                    <data:bbox framespan="108:108" height="309"
+                        width="242" x="305" y="155"/>
+                    <data:bbox framespan="109:109" height="309"
+                        width="242" x="316" y="157"/>
+                    <data:bbox framespan="110:111" height="309"
+                        width="242" x="312" y="154"/>
+                    <data:bbox framespan="112:112" height="309"
+                        width="242" x="295" y="154"/>
+                    <data:bbox framespan="113:113" height="309"
+                        width="242" x="290" y="149"/>
+                    <data:bbox framespan="114:114" height="309"
+                        width="242" x="275" y="138"/>
+                    <data:bbox framespan="115:115" height="309"
+                        width="242" x="275" y="137"/>
+                    <data:bbox framespan="116:116" height="309"
+                        width="242" x="277" y="133"/>
+                    <data:bbox framespan="117:119" height="309"
+                        width="242" x="282" y="127"/>
+                    <data:bbox framespan="120:121" height="309"
+                        width="242" x="275" y="121"/>
+                    <data:bbox framespan="122:122" height="309"
+                        width="242" x="275" y="131"/>
+                    <data:bbox framespan="123:123" height="309"
+                        width="242" x="272" y="132"/>
+                    <data:bbox framespan="124:125" height="309"
+                        width="242" x="259" y="132"/>
+                    <data:bbox framespan="126:126" height="309"
+                        width="242" x="245" y="144"/>
+                    <data:bbox framespan="127:127" height="309"
+                        width="242" x="243" y="144"/>
+                    <data:bbox framespan="128:128" height="309"
+                        width="242" x="237" y="144"/>
+                    <data:bbox framespan="129:129" height="309"
+                        width="242" x="235" y="144"/>
+                    <data:bbox framespan="130:132" height="309"
+                        width="242" x="234" y="144"/>
+                    <data:bbox framespan="133:133" height="309"
+                        width="242" x="257" y="158"/>
+                    <data:bbox framespan="134:135" height="309"
+                        width="242" x="257" y="159"/>
+                    <data:bbox framespan="136:136" height="309"
+                        width="242" x="237" y="162"/>
+                    <data:bbox framespan="137:139" height="309"
+                        width="242" x="228" y="166"/>
+                    <data:bbox framespan="140:140" height="309"
+                        width="242" x="229" y="170"/>
+                    <data:bbox framespan="141:144" height="309"
+                        width="242" x="232" y="170"/>
+                    <data:bbox framespan="145:145" height="309"
+                        width="242" x="247" y="161"/>
+                    <data:bbox framespan="146:146" height="309"
+                        width="242" x="255" y="150"/>
+                    <data:bbox framespan="147:147" height="309"
+                        width="242" x="260" y="146"/>
+                    <data:bbox framespan="148:148" height="309"
+                        width="242" x="271" y="139"/>
+                    <data:bbox framespan="149:149" height="309"
+                        width="242" x="271" y="128"/>
+                    <data:bbox framespan="150:150" height="309"
+                        width="242" x="270" y="128"/>
+                    <data:bbox framespan="151:151" height="309"
+                        width="242" x="267" y="130"/>
+                    <data:bbox framespan="152:153" height="309"
+                        width="242" x="269" y="129"/>
+                    <data:bbox framespan="154:154" height="309"
+                        width="242" x="248" y="153"/>
+                    <data:bbox framespan="155:155" height="309"
+                        width="242" x="247" y="153"/>
+                    <data:bbox framespan="156:156" height="309"
+                        width="242" x="245" y="150"/>
+                    <data:bbox framespan="157:157" height="309"
+                        width="242" x="246" y="149"/>
+                    <data:bbox framespan="158:158" height="309"
+                        width="242" x="232" y="150"/>
+                    <data:bbox framespan="159:159" height="309"
+                        width="242" x="229" y="153"/>
+                    <data:bbox framespan="160:161" height="309"
+                        width="242" x="241" y="165"/>
+                    <data:bbox framespan="162:163" height="309"
+                        width="242" x="251" y="159"/>
+                    <data:bbox framespan="164:164" height="309"
+                        width="242" x="247" y="154"/>
+                    <data:bbox framespan="165:165" height="309"
+                        width="242" x="246" y="154"/>
+                    <data:bbox framespan="166:166" height="309"
+                        width="242" x="226" y="155"/>
+                </attribute>
+                <attribute name="basketball_shooting">
+                    <data:bvalue framespan="1:166" value="false"/>
+                </attribute>
+                <attribute name="biking">
+                    <data:bvalue framespan="1:166" value="true"/>
+                </attribute>
+                <attribute name="diving">
+                    <data:bvalue framespan="1:166" value="false"/>
+                </attribute>
+                <attribute name="golf_swing">
+                    <data:bvalue framespan="1:166" value="false"/>
+                </attribute>
+                <attribute name="horse_riding">
+                    <data:bvalue framespan="1:166" value="false"/>
+                </attribute>
+                <attribute name="soccer_juggling">
+                    <data:bvalue framespan="1:166" value="false"/>
+                </attribute>
+                <attribute name="swing">
+                    <data:bvalue framespan="1:166" value="false"/>
+                </attribute>
+                <attribute name="tennis_swing">
+                    <data:bvalue framespan="1:166" value="false"/>
+                </attribute>
+                <attribute name="trampoline_jumping">
+                    <data:bvalue framespan="1:166" value="false"/>
+                </attribute>
+                <attribute name="volleyball_spiking">
+                    <data:bvalue framespan="1:166" value="false"/>
+                </attribute>
+                <attribute name="walking">
+                    <data:bvalue framespan="1:166" value="false"/>
+                </attribute>
+            </object>
+        </sourcefile>
+    </data>
+</viper>

@@ -1,0 +1,11 @@
+v_jumping_08_02.mpg - too many artifacts & clutter
+v_jumping_08_03.mpg - too many artifacts & clutter
+v_jumping_15_01.mpg
+v_jumping_15_02.mpg
+v_jumping_15_03.mpg
+v_jumping_20_02.mpg - video fades from one scene to another
+v_jumping_24_03.mpg - too many artificats & clutter
+v_jumping_25_01.mpg - too many artificats & clutter
+v_jumping_25_02.mpg - too many artificats & clutter
+v_jumping_25_03.mpg - too many artificats & clutter
+v_jumping_25_04.mpg - too many artificats & clutter
